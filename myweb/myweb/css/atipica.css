@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family:'Amatic SC', cursive, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*  header */
+header {
+  
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    display:inline;
+}
+.leftheader {
+    padding: 60px 0 60px 0;
+    flex-basis: 50%;
+    text-align: center;
+    border: 0px solid orange;
+    align-content: center;
+}
+
+/* end header */
+/* nav tab */
+
+nav {
+    border-bottom: 3px solid #497051;
+    border-top: 3px solid #497051;
+    margin-top: 30px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #497051;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    background-color: #FABDC1;
+    color: black;
+}
+
+/* end nav tab */   
+
+.hello {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    font-size:120%;
+    border-radius: 20px;
+}
+
+
+section {
+    border-bottom: 0px solid #DA0090;
+    margin-bottom: 0.3rem;
+    margin-left: 3rem;
+    flex-flow: column nowrap;
+    align-content: center;
+
+ 
+    
+}
+article {
+    margin: 2rem 0;
+    border: 0px solid red;
+    background-color: #C7DBD0;
+    align-content: center;
+    text-align: center;
+  
+    
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+    border: 3px dotted green;
+}
+
+/*collections*/
+
+.collections-grid {
+
+        display:table;
+        flex-wrap:nowrap;
+        padding: 0 4px;
+        align-content: center;
+}
+
+.collections-grid img {
+    border: 0px dotted purple;
+    margin: 20px;
+    border-radius: 20%;
+
+}
+
+h2 {
+    text-align: center;
+    border: 0px solid green;
+}
+
+/*footer */
+footer {
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #A61F11;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
+    margin: 8px;
+
+}
+
+footer img {
+    border-radius: 20%;
+ 
+}
+/* end footer */

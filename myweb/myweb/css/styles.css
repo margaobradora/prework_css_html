@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #262e44;
+    color: rgb(243, 235, 235);
+
+    
+}
+/*header*/
+.wrapper
+{
+    width: 100%;
+    margin: 0 auto;
+        
+}
+h1 {font-size: 2.5em;
+        text-align: center;
+        background-color: #262e44;
+        color:rgb(243, 235, 235);;
+        padding: 6rem;
+        margin: 0rem;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        border-bottom: 5px solid white;
+        
+    }
+    h1 p{
+        padding: 5px;
+        margin: 0;
+        font-size: 0.5em;
+    }
+
+    /*END Header */
+
+    div {
+        border: 0px solid red;
+    }
+
+    /* Menu section */
+
+.nav { 
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1A1D26;
+    z-index: 10;
+    border-bottom: 10px #F2CAB3;
+    }
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style-type: none; 
+    padding: 0;
+    margin: 3px;
+    padding: 0;
+    text-align: right;
+}
+  nav li {
+      width: 10rem;
+      background-color:#1a1D26;
+      text-align: right; 
+      margin-bottom: 0.7rem; 
+      display: inline-block;
+      margin: 20px;
+  
+ /*Nav a es estilo de los botones del menú */
+    }   nav a {
+        border: 0px dotted white;
+        font-size: 1.2rem;
+        color: #F2CAB3; 
+        font-weight: bold;
+        text-decoration: none; 
+        display: inline-block;
+        padding: 0.5rem;
+        
+     }
+    /* nav hover como se ven los botones al pasar por encima */
+    nav a:hover{
+      background-color: #F2CAB3; 
+      color: #1a1D26; 
+      text-decoration: underline;
+      border-radius: 10px;
+      
+    }   
+    
+/*FIN menu section */
+
+/* About me section */
+
+.about-section p {
+    padding-bottom: 5px;
+    border: 0px dotted purple;
+    padding-top: 30px;
+
+
+}
+.about-section:not(label) {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 2rem;
+
+}
+    
+article {
+    border: 0px dotted yellow;
+    margin-bottom: 25px;
+    margin: 0 5rem;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+article img {
+    border-radius: 10px;
+    float: right;
+    border: 0px solid yellowgreen;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+
+label{
+    border: 0px solid pink;
+    font-size: 1.7rem;
+    width: 80%;
+    text-align:center;  
+    margin-bottom: 20rem;
+}
+
+/* FIN about me section */
+
+/* MY projects section */
+
+.projects-section {
+    background: #4a5169
+}
+
+.projects-section h2 {
+    border-bottom: 5px solid white;
+    padding-top: 35px;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+.projects-grid {
+    grid-template-areas: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    border: 0px dotted rgb(65, 15, 201);
+    align-content:left;
+    display: grid;
+}
+
+
+.projects-grid h2 {
+    text-align: center;
+}
+.projects-grid img {
+    order-radius: 10px;
+    float: left;
+    border: 5px solid white;
+
+}
+
+article:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.projects-grid p {
+    border: 0px dotted aquamarine;
+    line-height: 2rem;
+}
+
+.projects-grid a {
+    background-color: rgb(207, 209, 97);
+    color: black;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+.projects-grid a:hover {
+    background-color: rosybrown;
+    color: black    ;
+}
+/* END of MY projects section */
+
+/*contact me section */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contact-section a {
+    background-color: rgb(207, 209, 97);
+    color: black;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.contact-section a:hover {
+    background-color: rosybrown;
+    color: black    ;
+}
+
+.socialnetwork {
+    border-radius: 10px;
+    border: 0px solid white;
+    box-sizing: inherit;
+    list-style-type:none; 
+    padding:0;
+    margin-top:10px;
+    text-align: center;
+    float: center;
+}
+
+.socialnetwork li {
+    list-style-type:none; 
+    padding: 0;
+    margin-top:10px;
+    display: inline-table;
+    text-align:justify;  
+    border: 5px solid white; 
+    border-radius: 50%; 
+}
+
+/* END of contact section */
+
+/* Footer */
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 4px solid white;
+}
+
+
+

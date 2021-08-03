@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#DFDFC9; 
+    background-image: url(../img/formback.jpg)
+}
+
+form {
+    color: #595947;
+}
+
+fieldset:not([type="sumbit"]) {
+    border: 0px dotted grey;
+    border-radius: 10px;
+    margin: 0%;
+}
+section {
+    width: 45%;
+    margin: auto;
+    margin-top: 0px;
+    padding: 1em;
+    display: block;
+    flex-flow: row nowrap;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+legend {
+    width: 80%;
+    margin-bottom: 50px;
+    padding:10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+    color: #595947
+}
+
+textarea {
+    height: 60px;
+    padding: 50px;
+    margin: 10px 0;
+}
+
+input:not([type="checkbox"]), textarea {
+    display: block;
+    margin: 20px 0;
+    width: 20rem;
+    border-radius: 10px;
+      
+}
+
+p {
+    display: block;
+    padding-bottom: 0.3rem;
+}
+
+label {
+    color: #595947;
+    margin: 20px 0;
+}
+
+button {
+    font-size: 1rem;
+    margin: 2rem 0;
+    background-color: sandybrown;
+    color: black;   
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    float: right;   
+}
+
+button:hover {
+    background-color: black;
+    color: sandybrown
+
+}
